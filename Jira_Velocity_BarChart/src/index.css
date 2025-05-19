@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-button {
+  padding: 10px 15px;
+  border: 1px;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.0001s ease-in;
+}
+.container button:active {
+  transform: scale(0.9);
+}
+.chart-Container {
+  height: 60vh;
+  width: 80vh;
+
+  position: relative;
+}
+.chart {
+  width: 90%;
+  height: 90%;
+  border: 2px solid black;
+  border-right: 0px;
+
+  border-top: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+.bar {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  gap: 20px;
+  background-color: brown;
+  transition: height 2.8s ease-in-out;
+}
+.tooltip {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: max-content;
+  background-color: black;
+  border: 1px thick black;
+  color: aliceblue;
+  display: block;
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateY(-120%);
+  transition: height 0.8s ease-out;
+}
+.bar:hover .tooltip {
+  opacity: 1;
+}
+.y-axis-label {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-60%) translateY(+50%) rotate(-90deg);
+}
+.x-axis-label {
+  position: absolute;
+  bottom: 0px;
+  transform: translateX(+100%);
+}
