@@ -1,0 +1,27 @@
+.box {
+  border: 2px solid black;
+  width: 80px;
+  height: 80px;
+  padding: 30px;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease-in-out;
+}
+.box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+  gap: 20px;
+
+  /*i should merge .box.visible*/
+}
+.box.visible {
+  cursor: pointer;
+}
+.box.hidden {
+  opacity: 0;
+  cursor: initial;
+}
+.box.selected {
+  background-color: darkolivegreen;
+  cursor: not-allowed;
+}
