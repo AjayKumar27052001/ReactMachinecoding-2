@@ -58,6 +58,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   border: 1px solid whitesmoke;
+  border-radius: 5px;
 
   width: 100%;
 }
@@ -67,4 +68,7 @@ button:focus-visible {
   justify-content: space-between;
   padding: 6px;
   width: 90%;
+}
+.accordion-content {
+  padding: 4px;
 }
