@@ -1,0 +1,41 @@
+.container {
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form {
+  height: 400px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid black;
+}
+.input-form {
+  position: relative;
+  height: 60px;
+}
+.input-form label {
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  font-size: 1em;
+  transform: translateX(-120%);
+  text-align: left;
+  width: 100px;
+}
+.input-form input {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  font-size: 1em;
+  transform: translateX(-50%);
+}
+.input-form input:hover ~ label,
+.input-form input:focus ~ label {
+  top: 3px;
+}
